@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="205dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/mainRadius"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:background="@drawable/round_outline"
+            android:layout_margin="1dp"
+            android:id="@+id/img_product_show"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="start"
+            android:maxLines="2"
+            android:id="@+id/txt_product_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="سلام سلامس لامس خیتبش خثقخقثدلث فخث لث لخثلث لث "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_product_show"
+            app:layout_constraintTop_toBottomOf="@+id/img_product_show" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ImageView-->
+    <!--    android:layout_margin="10dp"-->
+    <!--    android:id="@+id/img_product_show"-->
+    <!--    android:layout_width="150dp"-->
+    <!--    android:layout_height="150dp"-->
+    <!--    android:src="@drawable/ic_launcher_background"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"-->
+    <!--    android:contentDescription="@string/todo" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginRight="2dp"-->
+    <!--    android:id="@+id/txt_product_name"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="5dp"-->
+    <!--    android:text="سلام"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="1.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginEnd="2dp" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginBottom="1dp"-->
+    <!--    android:layout_marginLeft="2dp"-->
+    <!--    android:id="@+id/txt_product_price"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="26dp"-->
+    <!--    android:text="3000"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="@+id/txt_product_name"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginStart="2dp" />-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

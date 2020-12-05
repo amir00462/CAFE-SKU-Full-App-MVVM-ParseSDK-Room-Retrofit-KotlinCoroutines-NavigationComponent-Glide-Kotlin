@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/parent_SignUpActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_signUp_top"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_signupactivity_topheather" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignStart="@id/img_signUp_top"
+            android:layout_alignTop="@id/img_signUp_top"
+            android:layout_alignEnd="@id/img_signUp_top"
+            android:layout_alignBottom="@id/img_signUp_top"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_signupactivity_transparent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img_signUp_top"
+            android:layout_marginTop="-100dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rltLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="@dimen/mainRadius"
+                        app:cardElevation="@dimen/cardElevation">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="50dp">
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/signUp_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="32dp"
+                                android:hint="نام و نام خانوادگی"
+                                android:inputType="text"
+                                android:textCursorDrawable="@drawable/shape_shapebackground"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_floatingLabel="highlight"
+                                app:met_primaryColor="?colorAccent" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/signUp_IdStudent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:hint="شماره دانشجویی"
+                                android:inputType="number"
+                                android:textCursorDrawable="@drawable/shape_shapebackground"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_floatingLabel="highlight"
+                                app:met_primaryColor="?colorAccent" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/signUp_PhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:hint="تلفن همراه"
+                                android:inputType="number"
+                                android:textCursorDrawable="@drawable/shape_shapebackground"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_floatingLabel="highlight"
+                                app:met_primaryColor="?colorAccent" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:textColorHint="@color/colorAccent"
+                                app:boxStrokeColor="@color/colorAccent"
+
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                app:hintEnabled="false"
+                                app:boxBackgroundColor="@android:color/white"
+                                android:id="@+id/SignUp_parent_Year"
+                                android:layoutDirection="rtl"
+                                app:endIconMode="dropdown_menu"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/SignUp_txt_Year"
+                                    android:hint="ورودی"
+                                    android:inputType="none"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:textColorHint="@color/colorAccent"
+                                app:boxStrokeColor="@color/colorAccent"
+
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                app:hintEnabled="false"
+                                app:boxBackgroundColor="@android:color/white"
+                                android:id="@+id/SignUp_parent_NameDaneshkade"
+                                android:layoutDirection="rtl"
+                                app:endIconMode="dropdown_menu"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/SignUp_txt_NameDaneshkade"
+                                    android:hint="نام دانشکده"
+                                    android:inputType="none"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+
+                                android:textColorHint="@color/colorAccent"
+                                app:boxStrokeColor="@color/colorAccent"
+
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                app:hintEnabled="false"
+                                app:boxBackgroundColor="@android:color/white"
+                                android:id="@+id/SignUp_parent_NameReshte"
+                                android:layoutDirection="rtl"
+                                app:endIconMode="dropdown_menu"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:textColor="@android:color/black"
+                                    android:id="@+id/SignUp_txt_NameReshte"
+                                    android:hint="نام رشته"
+                                    android:inputType="none"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <Button
+                                android:onClick="onClickSignUp"
+                                android:id="@+id/signUp_NotFoundReshte"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/colorAccent"
+                                android:text="رشته خود را پیدا نمیکنم!"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_margin="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginTop="30dp"
+                                android:text=" شماره دانشجویی شما به عنوان نام کاربری استفاده خواهد شد "
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=" شماره همراه شما به عنوان رمز ورود استفاده خواهد شد "
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:layout_marginTop="-50dp"
+                    app:spinning_bar_padding="5dp"
+                    app:spinning_bar_color="@android:color/white"
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/shape_signup_newuser"
+                    android:onClick="onClickSignUp"
+                    android:text="ثبت نام"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_SignUpActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/anim_signuser"
+        app:lottie_speed="1" />
+
+</FrameLayout>

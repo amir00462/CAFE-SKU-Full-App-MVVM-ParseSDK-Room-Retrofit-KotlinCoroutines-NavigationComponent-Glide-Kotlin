@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:background="@drawable/round_outline"
+            android:id="@+id/img_aboutSku"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"/>
+
+        <Button
+            android:id="@+id/btn_aboutSku"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:elevation="0.5dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="گلچین تصاویر دانشگاه"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:text="آنچه بین دانشجویان می گذرد"
+            android:id="@+id/txt_aboutSku_Sub1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+           android:textAlignment="center"
+            android:text="@string/det1"
+            android:id="@+id/txt_aboutSku_Det1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="معرفی دانشگاه شهرکرد"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:id="@+id/txt_aboutSku_Sub2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/det2"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_aboutSku_Det2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="آب و هوای شهرکرد"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:id="@+id/txt_aboutSku_Sub3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/det3"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_aboutSku_Det3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="افتخارات دانشگاه شهرکرد"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:id="@+id/txt_aboutSku_Sub4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/det4"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/txt_aboutSku_Det4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:id="@+id/coordinator_TabrikType"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".ui.fragment.tabrikType.TabrikTypeFragment">-->
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:id="@+id/appBarTabrikType"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:theme="@style/ThemeOverlay.MaterialComponents.Dark">-->
+
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbarTabrikType"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:background="?colorPrimary"-->
+    <!--            android:theme="@style/ToolbarTheme"-->
+    <!--            app:layout_scrollFlags="scroll|enterAlways">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?actionBarSize"-->
+    <!--                android:background="@color/colorPrimary">-->
+
+    <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                    android:id="@+id/img_ProfilePic_TabrikTypeFragment_ActionBar"-->
+    <!--                    android:layout_width="?actionBarSize"-->
+    <!--                    android:layout_height="?actionBarSize"-->
+    <!--                    android:layout_alignParentStart="true"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:layout_marginBottom="5dp" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="?actionBarSize"-->
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    android:layout_toEndOf="@id/img_ProfilePic_TabrikTypeFragment_ActionBar"-->
+    <!--                    android:scaleType="fitCenter"-->
+    <!--                    android:src="@drawable/img_head_tabriktype" />-->
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--        <HorizontalScrollView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:scrollbars="none">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="horizontal">-->
+
+    <!--                <com.google.android.material.chip.Chip-->
+    <!--                    android:id="@+id/chipFilterDataTypeTabrik"-->
+    <!--                    style="@style/CustomChipAction"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginLeft="6dp"-->
+    <!--                    android:layout_marginRight="6dp"-->
+    <!--                    android:text="فیلتر"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    app:chipIcon="@drawable/ic_filter_data_chip"-->
+    <!--                    app:chipIconEnabled="true" />-->
+
+    <!--                <com.google.android.material.chip.ChipGroup-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    app:chipSpacingHorizontal="8dp"-->
+    <!--                    app:singleSelection="true">-->
+
+    <!--                    <com.google.android.material.chip.Chip-->
+    <!--                        android:id="@+id/chipTavalodTypeTabrik"-->
+    <!--                        style="@style/CustomChipChoice"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="تولد"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                    <com.google.android.material.chip.Chip-->
+    <!--                        android:id="@+id/chipSalgardTypeTabrik"-->
+    <!--                        style="@style/CustomChipChoice"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="سالگرد"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                    <com.google.android.material.chip.Chip-->
+    <!--                        android:id="@+id/chipEidTypeTabrik"-->
+    <!--                        style="@style/CustomChipChoice"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="عیدها"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                    <com.google.android.material.chip.Chip-->
+    <!--                        android:id="@+id/chipJokTypeTabrik"-->
+    <!--                        style="@style/CustomChipChoice"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="جک ها"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                </com.google.android.material.chip.ChipGroup>-->
+
+
+    <!--            </LinearLayout>-->
+
+    <!--        </HorizontalScrollView>-->
+
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler_typeTabrik"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+    <!--        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"-->
+    <!--        tools:listitem="@layout/item_typetabrik" />-->
+
+    <!--    <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fab_addText_TypeTabrik"-->
+    <!--        style="@style/Widget.MaterialComponents.FloatingActionButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom|center_horizontal"-->
+    <!--        app:fab_icon="@drawable/ic_add"-->
+    <!--        tools:ignore="RtlHardcoded" />-->
+
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+    <!--        android:id="@+id/progressBar_TabrikTypeFragment"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:visibility="@{vm.isLoading() ? View.VISIBLE : View.GONE}"-->
+    <!--        app:lottie_autoPlay="true"-->
+    <!--        app:lottie_loop="true"-->
+    <!--        app:lottie_rawRes="@raw/anim_loading"-->
+    <!--        app:lottie_speed="2" />-->
+
+
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+    <!--        <com.getbase.floatingactionbutton.FloatingActionsMenu-->
+    <!--            android:id="@+id/fab_TabrikType_Menuj"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom|left"-->
+    <!--            android:layout_margin="@dimen/fab_margin"-->
+    <!--            app:fab_addButtonColorNormal="@color/colorPrimary"-->
+    <!--            app:fab_addButtonColorPressed="@color/colorPrimaryDark"-->
+    <!--            app:fab_addButtonSize="normal"-->
+    <!--            app:fab_labelStyle="@style/FabCustomStyle"-->
+    <!--            tools:ignore="RtlHardcoded">-->
+
+    <!--            <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--                android:id="@+id/fab_TabrikType_Action_FilterData"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:fabSize="mini"-->
+    <!--                app:fab_colorNormal="@color/colorAccent"-->
+    <!--                app:fab_icon="@drawable/ic_filter_data" />-->
+
+    <!--            <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--                android:id="@+id/fab_TabrikType_Action_AddNewData"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:fabSize="mini"-->
+    <!--                app:fab_colorNormal="@color/colorAccent"-->
+    <!--                app:fab_icon="@drawable/ic_add_new_text" />-->
+
+
+    <!--        </com.getbase.floatingactionbutton.FloatingActionsMenu>-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_gravity="bottom|left"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            tools:ignore="RtlHardcoded">-->
+
+    <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--                android:visibility="invisible"-->
+    <!--                android:layout_alignParentLeft="true"-->
+    <!--                android:padding="5dp"-->
+    <!--                android:layout_above="@id/fab_TabrikType_AddNewData"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:id="@+id/fab_TabrikType_FilterData"-->
+    <!--                android:clickable="true"-->
+    <!--                android:focusable="true"-->
+    <!--                android:layout_marginLeft="@dimen/fab_margin"-->
+    <!--                android:layout_marginRight="@dimen/fab_margin"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"/>-->
+
+    <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--                android:visibility="invisible"-->
+    <!--                android:layout_alignParentLeft="true"-->
+    <!--                android:padding="5dp"-->
+    <!--                android:layout_above="@id/fab_TabrikType"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:id="@+id/fab_TabrikType_AddNewData"-->
+    <!--                android:clickable="true"-->
+    <!--                android:focusable="true"-->
+    <!--                android:layout_marginLeft="@dimen/fab_margin"-->
+    <!--                android:layout_marginRight="@dimen/fab_margin"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                tools:ignore="RtlHardcoded" />-->
+
+    <!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--                android:layout_alignParentLeft="true"-->
+    <!--                android:layout_alignParentBottom="true"-->
+    <!--                android:src="@drawable/ic_add_float_action_button"-->
+    <!--                android:clickable="true"-->
+    <!--                android:focusable="true"-->
+    <!--                android:id="@+id/fab_TabrikType"-->
+    <!--                android:layout_marginLeft="@dimen/fab_margin"-->
+    <!--                android:layout_marginRight="@dimen/fab_margin"-->
+    <!--                android:layout_marginBottom="@dimen/fab_margin"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content" />-->
+
+
+    <!--        </RelativeLayout>-->

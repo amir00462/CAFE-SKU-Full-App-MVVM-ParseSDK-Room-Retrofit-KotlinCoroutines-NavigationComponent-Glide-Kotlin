@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_card_normal_right">5dp</dimen>
+    <dimen name="margin_card_first_right">15dp</dimen>
+    <dimen name="margin_card_normal">0dp</dimen>
+
+    <dimen name="cardElevation">12sp</dimen>
+    <dimen name="mainRadius">10dp</dimen>
+
+    <dimen name="margin_itemChatRightNormal">40dp</dimen>
+    <dimen name="margin_itemChatLeftNormal">20dp</dimen>
+    <dimen name="margin_itemChatTopBottomNormal">5dp</dimen>
+    <dimen name="margin_itemChatFirstLast">10dp</dimen>
+
+    <dimen name="margin_8dp_normal">8dp</dimen>
+
+
+</resources>

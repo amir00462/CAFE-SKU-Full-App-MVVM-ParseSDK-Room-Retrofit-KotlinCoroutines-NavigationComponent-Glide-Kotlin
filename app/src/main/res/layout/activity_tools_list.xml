@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_profile_back">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/titleFather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            app:title=" "
+            android:theme="@style/ToolbarTheme"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:id="@+id/toolbarToolsList"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/recycler"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:id="@+id/recycler_tools_list"
+        tools:listitem="@layout/item_tools_list"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+    <!--    <data>-->
+
+    <!--        <import type="android.view.View" />-->
+
+    <!--        <variable-->
+    <!--            name="vm"-->
+    <!--            type="com.ahm.tabrikmonasebat.ui.fragment.mainScreen.tabrikType.TabrikTypeViewModel" />-->
+
+    <!--    </data>-->
+
+    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--        android:id="@+id/coordinator_TabrikType"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:context=".ui.fragment.tabrikType.TabrikTypeFragment">-->
+
+    <!--        <com.google.android.material.appbar.AppBarLayout-->
+    <!--            android:id="@+id/appBarTabrikType"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:theme="@style/ThemeOverlay.MaterialComponents.Dark">-->
+
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--                android:id="@+id/toolbarTabrikType"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?attr/actionBarSize"-->
+    <!--                android:background="?colorPrimary"-->
+    <!--                android:theme="@style/ToolbarTheme"-->
+    <!--                app:layout_scrollFlags="scroll|enterAlways">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="?actionBarSize"-->
+    <!--                    android:background="@color/colorPrimary">-->
+
+    <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--                        android:id="@+id/img_ProfilePic_TabrikTypeFragment_ActionBar"-->
+    <!--                        android:layout_width="?actionBarSize"-->
+    <!--                        android:layout_height="?actionBarSize"-->
+    <!--                        android:layout_alignParentStart="true"-->
+    <!--                        android:layout_marginTop="5dp"-->
+    <!--                        android:layout_marginBottom="5dp" />-->
+
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="?actionBarSize"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:layout_toEndOf="@id/img_ProfilePic_TabrikTypeFragment_ActionBar"-->
+    <!--                        android:scaleType="fitCenter"-->
+    <!--                        android:src="@drawable/img_head_tabriktype" />-->
+
+    <!--                </RelativeLayout>-->
+
+
+    <!--            </androidx.appcompat.widget.Toolbar>-->
+
+    <!--            <HorizontalScrollView-->
+    <!--                android:scrollbars="none"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content">-->
+
+    <!--                    <com.google.android.material.chip.Chip-->
+    <!--                        android:textSize="20sp"-->
+    <!--                        app:chipIcon="@drawable/ic_filter_data_chip"-->
+    <!--                        app:chipIconEnabled="true"-->
+    <!--                        android:layout_marginRight="6dp"-->
+    <!--                        android:layout_marginLeft="6dp"-->
+    <!--                        android:id="@+id/chipFilterDataTypeTabrik"-->
+    <!--                        style="@style/CustomChipAction"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="فیلتر" />-->
+
+    <!--                    <com.google.android.material.chip.ChipGroup-->
+    <!--                        app:chipSpacingHorizontal="8dp"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        app:singleSelection="true">-->
+
+    <!--                        <com.google.android.material.chip.Chip-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            android:id="@+id/chipTavalodTypeTabrik"-->
+    <!--                            style="@style/CustomChipChoice"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="تولد" />-->
+
+    <!--                        <com.google.android.material.chip.Chip-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            android:id="@+id/chipSalgardTypeTabrik"-->
+    <!--                            style="@style/CustomChipChoice"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="سالگرد" />-->
+
+    <!--                        <com.google.android.material.chip.Chip-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            android:id="@+id/chipEidTypeTabrik"-->
+    <!--                            style="@style/CustomChipChoice"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="عیدها" />-->
+
+    <!--                        <com.google.android.material.chip.Chip-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            android:id="@+id/chipJokTypeTabrik"-->
+    <!--                            style="@style/CustomChipChoice"-->
+    <!--                            android:layout_width="wrap_content"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:text="جک ها" />-->
+
+    <!--                    </com.google.android.material.chip.ChipGroup>-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </HorizontalScrollView>-->
+
+
+    <!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/recycler_typeTabrik"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+    <!--            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"-->
+    <!--            tools:listitem="@layout/item_typetabrik" />-->
+
+    <!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--            app:fab_icon="@drawable/ic_add"-->
+    <!--            style="@style/Widget.MaterialComponents.FloatingActionButton"-->
+    <!--            android:id="@+id/fab_addText_TypeTabrik"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom|center_horizontal"-->
+    <!--            tools:ignore="RtlHardcoded" />-->
+
+    <!--        <com.airbnb.lottie.LottieAnimationView-->
+    <!--            android:id="@+id/progressBar_TabrikTypeFragment"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:visibility="@{vm.isLoading() ? View.VISIBLE : View.GONE}"-->
+    <!--            app:lottie_autoPlay="true"-->
+    <!--            app:lottie_loop="true"-->
+    <!--            app:lottie_rawRes="@raw/anim_loading"-->
+    <!--            app:lottie_speed="2" />-->
+
+
+    <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    <!--</layout>-->
+
+    <!--    &lt;!&ndash;        <com.getbase.floatingactionbutton.FloatingActionsMenu&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/fab_TabrikType_Menuj"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_gravity="bottom|left"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_margin="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:fab_addButtonColorNormal="@color/colorPrimary"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:fab_addButtonColorPressed="@color/colorPrimaryDark"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:fab_addButtonSize="normal"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:fab_labelStyle="@style/FabCustomStyle"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            tools:ignore="RtlHardcoded">&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            <com.getbase.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:id="@+id/fab_TabrikType_Action_FilterData"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fabSize="mini"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fab_colorNormal="@color/colorAccent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fab_icon="@drawable/ic_filter_data" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            <com.getbase.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:id="@+id/fab_TabrikType_Action_AddNewData"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fabSize="mini"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fab_colorNormal="@color/colorAccent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                app:fab_icon="@drawable/ic_add_new_text" />&ndash;&gt;-->
+
+
+    <!--    &lt;!&ndash;        </com.getbase.floatingactionbutton.FloatingActionsMenu>&ndash;&gt;-->
+
+
+    <!--    &lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_gravity="bottom|left"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            tools:ignore="RtlHardcoded">&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:visibility="invisible"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:padding="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_above="@id/fab_TabrikType_AddNewData"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:id="@+id/fab_TabrikType_FilterData"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:focusable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginLeft="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginRight="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:visibility="invisible"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:padding="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_above="@id/fab_TabrikType"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:id="@+id/fab_TabrikType_AddNewData"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:focusable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginLeft="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginRight="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                tools:ignore="RtlHardcoded" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_alignParentBottom="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:src="@drawable/ic_add_float_action_button"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:focusable="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:id="@+id/fab_TabrikType"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginLeft="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginRight="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_marginBottom="@dimen/fab_margin"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;                android:layout_height="wrap_content" />&ndash;&gt;-->
+
+
+    <!--    &lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->

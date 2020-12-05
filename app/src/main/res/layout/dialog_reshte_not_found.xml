@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        app:hintEnabled="false"
+        app:boxBackgroundColor="@android:color/white"
+        android:id="@+id/Dialog_parent_NameDaneshkade"
+        android:layoutDirection="rtl"
+        app:endIconMode="dropdown_menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/Dialog_txt_txt_NameDaneshkade"
+            android:hint="نام دانشکده : "
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/signUp_IdStudent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="نام رشته : "
+        android:inputType="text"
+        android:textCursorDrawable="@drawable/shape_shapebackground"
+        android:textSize="16sp"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent" />
+
+</LinearLayout>

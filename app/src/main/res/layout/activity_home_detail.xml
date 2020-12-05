@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginBottom="20dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <ImageView
+                android:id="@+id/img_BigPic_HomeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_error"
+                app:layout_collapseMode="parallax" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_title_background" />
+
+            <androidx.appcompat.widget.Toolbar
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+                android:id="@+id/toolbarHomeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:linksClickable="true"
+                android:id="@+id/txt_HomeDetail"
+                android:autoLink="web"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                tools:text="سلام به همی شما دوستان خوب و گرامی خودم امیدوارم همیشه و هیمیشه در کنار هم خوب و خرم زندگی گمندی و بتوانید ترم خوبی را با هم در میان گزاریم"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UnusedAttribute" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="gone"
+        app:borderWidth="0dp"
+        android:id="@+id/fabVideo"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_play"
+        app:tint="@android:color/white"
+        app:maxImageSize="28dp"
+        android:layout_marginEnd="25dp"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@id/appBarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute,VectorDrawableCompat" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="برو به آدرس"
+        android:textColor="@android:color/white"
+        app:iconTint="@android:color/white"
+        app:strokeWidth="0dp"
+        app:icon="@drawable/ic_link"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="16dp"
+        android:id="@+id/fabUrl"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="مسیریابی"
+        android:textColor="@android:color/white"
+        app:iconTint="@android:color/white"
+        app:strokeWidth="0dp"
+        android:backgroundTint="@color/colorAccent"
+        app:icon="@drawable/ic_navigate"
+        android:layout_margin="16dp"
+        android:id="@+id/fabNavigate"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

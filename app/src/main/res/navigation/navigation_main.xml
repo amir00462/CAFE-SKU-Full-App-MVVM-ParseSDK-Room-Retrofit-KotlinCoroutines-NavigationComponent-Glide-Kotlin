@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+<!--    main Fragments-->
+    <fragment
+    android:id="@+id/navigation_home"
+    android:name="com.ahm.sku.ui.fragment.home.HomeFragment"
+    android:label="@string/homeTitle"
+    tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.ahm.sku.ui.fragment.news.NewsFragment"
+        android:label="@string/newsTitle"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ahm.sku.ui.fragment.profile.ProfileFragment"
+        android:label="@string/profileTitle"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_about_sku"
+        android:name="com.ahm.sku.ui.fragment.aboutSku.AboutSkuFragment"
+        android:label="@string/aboutUniTitle"
+        tools:layout="@layout/fragment_about_sku" />
+
+    <fragment
+        android:id="@+id/navigation_tools"
+        android:name="com.ahm.sku.ui.fragment.tools.ToolsFragment"
+        android:label="@string/toolsTitle"
+        tools:layout="@layout/fragment_tools" />
+
+</navigation>

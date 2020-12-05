@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_anjomanPage"
+        android:icon="@drawable/ic_menu_anjoman"
+        android:title="انجمن علمی مهندسی کامپیوتر" />
+
+
+    <item
+        android:id="@+id/menu_programmerPage"
+        android:icon="@drawable/ic_menu_programmer"
+        android:title="درباره سازنده" />
+
+
+    <item
+        android:id="@+id/menu_hemayatAzMa"
+        android:icon="@drawable/ic_menu_hemayat"
+        android:title="حمایت از ما" />
+
+
+    <item
+        android:id="@+id/menu_EshterakGozari"
+        android:icon="@drawable/ic_menu_share"
+        android:title="اشتراک گذاری" />
+
+    <item
+        android:id="@+id/menu_signOut"
+        android:icon="@drawable/ic_menu_log_out"
+        android:title="خروج از حساب" />
+
+    <item android:title="به تیم ما بپیوندید">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_helpUs0"
+                android:title="گزارش باگ"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_helpUs1"
+                android:title="میخواهید کمک کنید یا ایده ای دارید؟!"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_helpUs3"
+                android:title="نویسنده خبرنامه شوید!"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+    <item android:title="لینک های مفید دانشگاه">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_Sess"
+                android:title="سامانه سس"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_UniversitySite"
+                android:title="سایت دانشگاه"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_SamaneEmtehanat"
+                android:title="سامانه امتحانات"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_NahadShahrekord"
+                android:title="نهاد رهبری شهرکرد"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_SabtDore"
+                android:title="ثبت نام دوره ها"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_App_Page"
+                android:title="صفحه اپ cafe sku"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+    <item android:title="لینک های مفید دانشجویی">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_SandoghRefahDaneshgooyan"
+                android:title="صندوق رفاه دانشجویان"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_SajjadSite"
+                android:title="سامانه سجاد"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

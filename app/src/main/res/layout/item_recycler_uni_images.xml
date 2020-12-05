@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemUniImageFather"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/test_image"
+        android:id="@+id/imgUniImageSon"
+        android:layout_width="133dp"
+        android:layout_height="133dp"/>
+
+
+</FrameLayout>
+
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ImageView-->
+    <!--    android:layout_margin="10dp"-->
+    <!--    android:id="@+id/img_product_show"-->
+    <!--    android:layout_width="150dp"-->
+    <!--    android:layout_height="150dp"-->
+    <!--    android:src="@drawable/ic_launcher_background"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"-->
+    <!--    android:contentDescription="@string/todo" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginRight="2dp"-->
+    <!--    android:id="@+id/txt_product_name"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="5dp"-->
+    <!--    android:text="سلام"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="1.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginEnd="2dp" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginBottom="1dp"-->
+    <!--    android:layout_marginLeft="2dp"-->
+    <!--    android:id="@+id/txt_product_price"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="26dp"-->
+    <!--    android:text="3000"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="@+id/txt_product_name"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginStart="2dp" />-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

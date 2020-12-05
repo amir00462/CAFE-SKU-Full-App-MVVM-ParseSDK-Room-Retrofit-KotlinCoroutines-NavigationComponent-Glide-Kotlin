@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.ahm.sku.ui.fragment.home.HomeViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".ui.activity.MainActivity">
+
+                <com.glide.slider.library.SliderLayout
+                    android:id="@+id/sliderMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layoutDirection="rtl"
+                    app:layout_collapseMode="parallax" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productWorkWithSess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="اتوماسیون دانشجویی سس" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productSamaneVaSite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="سایت و سامانه های آنلاین" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productDaneshkade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="کلاس و دانشکده ها" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productAmakenEdari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="اماکن اداری دانشگاه" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productKhabgah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="خوابگاه ها" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productSelfVaTaghziye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="سلف و تغذیه" />
+
+                <com.ahm.sku.customView.productView.ProductView
+                    android:id="@+id/productTafrihi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    app:productTitle="تفریحی دانشگاه" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:background="@color/gray_btn_bg_color"-->
+    <!--        android:theme="@style/ThemeOverlay.MaterialComponents.Dark">-->
+
+
+    <!--            <com.google.android.material.appbar.CollapsingToolbarLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@android:color/darker_gray"-->
+    <!--                android:theme="@style/ThemeOverlay.MaterialComponents.Dark"-->
+    <!--                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">-->
+
+
+    <!--            </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbarHome"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:background="?colorPrimary"-->
+    <!--            android:theme="@style/ToolbarTheme">-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?actionBarSize"-->
+    <!--                android:background="@color/colorPrimary">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img_About_ComputerAnjoman_ActionBar"-->
+    <!--                    android:layout_width="?actionBarSize"-->
+    <!--                    android:layout_height="?actionBarSize"-->
+    <!--                    android:layout_alignParentStart="true"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:layout_marginBottom="5dp"-->
+    <!--                    android:src="@drawable/ic_sku_icon" />-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_centerHorizontal="true"-->
+    <!--                    android:layout_centerVertical="true"-->
+    <!--                    android:scaleType="fitCenter"-->
+    <!--                    android:text="SKU"-->
+    <!--                    android:textColor="@android:color/white"-->
+    <!--                    android:textSize="24sp" />-->
+
+    <!--            </RelativeLayout>-->
+
+
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--        <ImageView-->
+    <!--            app:layout_scrollFlags="scroll"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/ic_sku_icon" />-->
+
+    <!--        -->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ScrollView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:scrollbars="none">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            tools:context=".ui.activity.MainActivity">-->
+
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img1"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="250dp"-->
+    <!--                    android:layout_marginStart="25dp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_marginEnd="25dp"-->
+    <!--                    android:layout_marginBottom="10dp"-->
+    <!--                    android:background="@drawable/shape_linear_clickable_background"-->
+    <!--                    android:contentDescription="@string/todo"-->
+    <!--                    android:scaleType="fitXY"-->
+    <!--                    android:src="@drawable/test_image" />-->
+
+    <!--                <com.ahm.sku.customView.productView.ProductView-->
+    <!--                    android:id="@+id/product1"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp" />-->
+
+    <!--                <com.ahm.sku.customView.productView.ProductView-->
+    <!--                    android:id="@+id/product2"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp" />-->
+
+    <!--                <com.ahm.sku.customView.productView.ProductView-->
+    <!--                    android:id="@+id/product3"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp" />-->
+
+    <!--                <com.ahm.sku.customView.productView.ProductView-->
+    <!--                    android:id="@+id/product4"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp" />-->
+
+    <!--                <com.ahm.sku.customView.productView.ProductView-->
+    <!--                    android:id="@+id/product5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="10dp" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@android:color/transparent"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbarMain"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:background="?colorPrimary"-->
+    <!--        android:theme="@style/ToolbarTheme">-->
+
+    <!--        <RelativeLayout-->
+
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="?actionBarSize"-->
+    <!--            android:background="@color/colorPrimary">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img_profile"-->
+    <!--                android:layout_width="?actionBarSize"-->
+    <!--                android:layout_height="?actionBarSize"-->
+    <!--                android:layout_alignParentStart="true"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_marginBottom="5dp" />-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?actionBarSize"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:layout_toEndOf="@id/img_profile"-->
+    <!--                android:scaleType="fitCenter"-->
+    <!--                android:src="@drawable/img_head_tabriktype" />-->
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:scrollbars="none">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            tools:context=".ui.activity.MainActivity">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="250dp"-->
+    <!--                android:layout_marginStart="25dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginEnd="25dp"-->
+    <!--                android:layout_marginBottom="10dp"-->
+    <!--                android:background="@drawable/shape_linear_clickable_background"-->
+    <!--                android:contentDescription="@string/todo"-->
+    <!--                android:scaleType="fitXY"-->
+    <!--                android:src="@drawable/test_image" />-->
+
+    <!--            <com.ahm.sku.customView.productView.ProductView-->
+    <!--                android:id="@+id/product1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+    <!--            <com.ahm.sku.customView.productView.ProductView-->
+    <!--                android:id="@+id/product2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+    <!--            <com.ahm.sku.customView.productView.ProductView-->
+    <!--                android:id="@+id/product3"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+    <!--            <com.ahm.sku.customView.productView.ProductView-->
+    <!--                android:id="@+id/product4"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+    <!--            <com.ahm.sku.customView.productView.ProductView-->
+    <!--                android:id="@+id/product5"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginBottom="10dp" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </ScrollView>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--&lt;!&ndash;<HorizontalScrollView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scrollbars="none">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:orientation="horizontal">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img2"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img3"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img4"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img5"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img6"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/img7"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginEnd="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="@drawable/shape_linear_clickable_background"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:contentDescription="@string/todo"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:src="@drawable/test_image" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</HorizontalScrollView>&ndash;&gt;-->

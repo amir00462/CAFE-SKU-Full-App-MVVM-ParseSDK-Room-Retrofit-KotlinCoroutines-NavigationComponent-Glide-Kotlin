@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layoutDirection="ltr"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_tools_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:layoutDirection="rtl"
+            android:padding="10dp"
+            android:id="@+id/img_tools_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_number" />
+
+        <TextView
+            android:id="@+id/txt_tools_name"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/img_tools_icon"
+            android:text="شماره همراه"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/txt_tools_button_to_do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="تماس بگیر !" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ImageView-->
+    <!--    android:layout_margin="10dp"-->
+    <!--    android:id="@+id/img_product_show"-->
+    <!--    android:layout_width="150dp"-->
+    <!--    android:layout_height="150dp"-->
+    <!--    android:src="@drawable/ic_launcher_background"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"-->
+    <!--    android:contentDescription="@string/todo" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginRight="2dp"-->
+    <!--    android:id="@+id/txt_product_name"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="5dp"-->
+    <!--    android:text="سلام"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="1.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginEnd="2dp" />-->
+
+    <!--<TextView-->
+    <!--    android:layout_marginBottom="1dp"-->
+    <!--    android:layout_marginLeft="2dp"-->
+    <!--    android:id="@+id/txt_product_price"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="26dp"-->
+    <!--    android:text="3000"-->
+    <!--    android:textColor="@android:color/black"-->
+    <!--    android:textSize="18sp"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="@+id/txt_product_name"-->
+    <!--    app:layout_constraintHorizontal_bias="0.0"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/img_product_show"-->
+    <!--    app:layout_constraintVertical_bias="0.0"-->
+    <!--    android:layout_marginStart="2dp" />-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

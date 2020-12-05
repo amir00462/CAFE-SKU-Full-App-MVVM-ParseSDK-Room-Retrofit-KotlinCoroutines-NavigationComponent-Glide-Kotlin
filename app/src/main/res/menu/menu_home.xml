@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_universityLinks"
+        android:title="لینک های مفید دانشگاه"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/menu_UniversitySite"
+                android:title="سایت دانشگاه"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_SamaneEmtehanat"
+                android:title="سامانه امتحانات"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_NahadShahrekord"
+                android:title="نهاد رهبری شهرکرد"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menu_StudentLinks"
+        android:title="لینک های مفید دانشجویی"
+        app:showAsAction="never">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/menu_SandoghRefahDaneshgooyan"
+                android:title="صندوق رفاه دانشجویان"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_SajjadSite"
+                android:title="سامانه سجاد"
+                app:showAsAction="never" />
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menu_aboutUs"
+        android:title="درباره ما"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_SignOut"
+        android:title="خروج از حساب"
+        app:showAsAction="never" />
+
+
+</menu>
