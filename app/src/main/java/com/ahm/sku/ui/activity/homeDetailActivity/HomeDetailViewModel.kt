@@ -16,5 +16,6 @@ class HomeDetailViewModel(private val repository: AppRepository) : ViewModel() {
         return repository.getHomeDataByCardId(id)
     }
 
-
 }
+
+// hello
